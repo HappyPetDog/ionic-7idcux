@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Daily Calorie Intake Calcuator
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <ion-card-header>
+    <ion-card-title>Activity Level Guide:</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ul>
+      <li>Sedentary lifestyle (little or no exercise): 1.2
+      <li> Slightly active lifestyle (light exercise or sports 1-2 days/week): 1.4
+      <li> Moderately active lifestyle (moderate exercise or sports 2-3 days/week): 1.6
+      <li> Very active lifestyle (hard exercise or sports 4-5 days/week): 1.75
+      <li> Extra active lifestyle (very hard exercise, physical job or sports 6-7 days/week): 2.0
+      <li> Professional athlete: 2.3    </ul>
+  </ion-card-content>
+</ion-card>
+
+  <ion-item>
+    <ion-label color="dark"> Gender: </ion-label>
+    <ion-select interface="popover" [(ngModel)]="gender">
+      <ion-option value="m">Male</ion-option>
+      <ion-option value="f">Female</ion-option>
+    </ion-select>
+</ion-item>
+<ion-item>
+    <ion-label>Height in centimeters: </ion-label>
+    <ion-input type = "number" [(ngModel)]="height"></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label>Weight in kilograms: </ion-label>
+    <ion-input type = "number" [(ngModel)]="weight"></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label>Age: </ion-label>
+    <ion-input type = "number" [(ngModel)]="age"></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label color="dark"> Activity Level: </ion-label>
+    <ion-select interface="popover" [(ngModel)]="activity_level">
+      <ion-option value="sedentary"> Sedentary lifestyle </ion-option>
+      <ion-option value="slightly_active"> Slightly active lifestyle </ion-option>
+      <ion-option value="moderately_active"> Moderately active lifestyle </ion-option>
+      <ion-option value="very_active"> Very active lifestyle </ion-option>
+      <ion-option value="extra_active"> Extra active lifestyle </ion-option>
+      <ion-option value="professional"> Professional athlete </ion-option>
+    </ion-select>
+</ion-item>
+<button ion-button color="secondary" (click) = "calculateDCI ()">
+  Calculate
+</button>
+<ion-item *ngIf = "dciMessage">
+  <h2> <code>{{dciMessage}}</code> </h2>
+  <h2> <code>{{dci}} kcal/day. </code>  </h2>
+</ion-item>
+
+</ion-content>
