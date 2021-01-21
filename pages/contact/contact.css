@@ -16,3 +16,10 @@ ion-card{
 ion-item{
   background-color: transparent;
 }
+
+.black{
+  color: black;
+}
+ion-label{
+  color: black;
+}
