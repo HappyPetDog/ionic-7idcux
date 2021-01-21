@@ -1,12 +1,16 @@
 .paragraph{
   text-align: justify;
-  font-family: "century gothic";
+  font-family: "poppins";
 }
 .header {
-  font-family: "century gothic";
+  font-family: "poppins";
+  text-align: center;
+}
+ion-title{
+  text-align: left;
 }
 #list{
-  font-family: "century gothic";
+  font-family: "poppins";
 }
 
 ion-content {
