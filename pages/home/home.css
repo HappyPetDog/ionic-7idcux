@@ -1,5 +1,12 @@
-p{
-  text-align: justified;
+.paragraph{
+  text-align: justify;
+  font-family: "century gothic";
+}
+.header {
+  font-family: "century gothic";
+}
+#list{
+  font-family: "century gothic";
 }
 
 ion-content {
@@ -8,4 +15,10 @@ ion-content {
 
 ion-navbar{
   background: linear-gradient(to top, #6dd5fa, #ffffff); 
+}
+
+img src{
+  height: 25px;
+  position: cente;
+
 }
