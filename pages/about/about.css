@@ -1,0 +1,9 @@
+ion-content {
+  background: linear-gradient(to top, #6dd5fa, #ffffff); 
+  font-family: "century gothic";
+  text-align: justify;
+}
+
+ion-navbar{
+  background: linear-gradient(to top, #6dd5fa, #ffffff); 
+}

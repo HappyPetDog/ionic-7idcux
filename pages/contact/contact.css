@@ -1,0 +1,20 @@
+ion-content {
+  background: linear-gradient(to top, #6dd5fa, #ffffff); 
+  font-family: "century gothic";
+}
+
+ion-navbar{
+  background: linear-gradient(to top, #6dd5fa, #ffffff); 
+}
+
+ion-card{
+  background-color: transparent;
+}
+
+ion-item{
+  background-color: transparent;
+}
+
+ion-label {
+  font-color: black;
+}

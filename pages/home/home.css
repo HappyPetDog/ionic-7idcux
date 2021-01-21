@@ -18,7 +18,7 @@ ion-navbar{
 }
 
 img src{
-  height: 25px;
-  position: cente;
+  max-height: 25px;
+  position: center;
 
 }
