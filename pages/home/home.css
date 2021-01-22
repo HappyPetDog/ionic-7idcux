@@ -21,8 +21,15 @@ ion-navbar{
   background: linear-gradient(to top, #6dd5fa, #ffffff); 
 }
 
-img src{
-  max-height: 25px;
-  position: center;
+img {
+  margin: auto;
+}
 
+.logo{
+  width: 50%;
+  margin: auto;
+}
+
+ .healthy{
+  text-align: center;
 }
