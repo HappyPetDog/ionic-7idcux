@@ -28,7 +28,7 @@ export class ContactPage {
       this.bmr = 10 * this.weight + 6.25 * this.height - 5 * this.age + 5;
       this.dci = this.bmr * 1.2;
       this.dci = parseFloat(this.dci.toFixed(1));
-      this.dciMessage = "Your Daily Calorie Intake is: ";
+      this.dciMessage = "Your Recommended Daily Calorie Intake is: ";
     } else if (
       this.age >= 18 &&
       this.gender == "f" &&
@@ -37,7 +37,7 @@ export class ContactPage {
       this.bmr = 10 * this.weight + 6.25 * this.height - 5 * this.age - 161;
       this.dci = this.bmr * 1.2;
       this.dci = parseFloat(this.dci.toFixed(1));
-      this.dciMessage = "Your Daily Calorie Intake is: ";
+      this.dciMessage = "Your Recommended Daily Calorie Intake is: ";
     } else if (
       this.age >= 18 &&
       this.gender == "m" &&
@@ -46,7 +46,7 @@ export class ContactPage {
       this.bmr = 10 * this.weight + 6.25 * this.height - 5 * this.age + 5;
       this.dci = this.bmr * 1.4;
       this.dci = parseFloat(this.dci.toFixed(1));
-      this.dciMessage = "Your Daily Calorie Intake is: ";
+      this.dciMessage = "Your Recommended Daily Calorie Intake is: ";
     } else if (
       this.age >= 18 &&
       this.gender == "f" &&
@@ -55,7 +55,7 @@ export class ContactPage {
       this.bmr = 10 * this.weight + 6.25 * this.height - 5 * this.age - 161;
       this.dci = this.bmr * 1.4;
       this.dci = parseFloat(this.dci.toFixed(1));
-      this.dciMessage = "Your  Daily Calorie Intake is: ";
+      this.dciMessage = "Your Recommended Daily Calorie Intake is: ";
     } else if (
       this.age >= 18 &&
       this.gender == "m" &&
@@ -127,7 +127,7 @@ export class ContactPage {
       this.bmr = 10 * this.weight + 6.25 * this.height - 5 * this.age - 161;
       this.dci = this.bmr * 2.3;
       this.dci = parseFloat(this.dci.toFixed(1));
-      this.dciMessage = "Your Daily Calorie Intake is: ";
+      this.dciMessage = "Your Recommended Daily Calorie Intake is: ";
     } else {
       this.dciMessage =
         "This Daily Calorie Intake Calculator is only for 18 years old and above.";
